@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="45" fill="#1a1a1a" stroke="#00a8ff" stroke-width="3"/>
-  <g stroke="#00a8ff" stroke-width="3" fill="none">
-    <circle cx="50" cy="50" r="25"/>
-    <path d="M50,25 L50,75 M25,50 L75,50"/>
-    <path d="M35,35 L65,65 M35,65 L65,35" stroke="#ffffff"/>
-  </g>
-  <text x="50" y="85" text-anchor="middle" fill="#00a8ff" font-family="Arial" font-size="12" font-weight="bold">VLA</text>
-</svg>

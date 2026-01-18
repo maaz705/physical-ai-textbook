@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Digital Twins',
-    Svg: require('@site/static/img/digital-twins-icon.svg').default,
+    Svg: require('@site/static/img/digital-twin-icon.svg').default,
     description: (
       <>
         Create realistic simulations with NVIDIA Isaac Sim and Gazebo for testing

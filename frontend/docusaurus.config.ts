@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics Textbook',
   tagline: 'Learn Advanced Robotics with AI-Powered Assistance',
-  favicon: 'img/robot-icon.png', // You can add this icon to the img folder
+  favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -79,7 +79,7 @@ const config: Config = {
       title: 'Physical AI & Robotics',
       logo: {
         alt: 'Robotics Textbook Logo',
-        src: 'img/robot-icon.png', // You can add this icon to the img folder
+        src: 'img/logo.svg',
       },
       items: [
         {
@@ -92,15 +92,7 @@ const config: Config = {
         {to: '/chapters', label: 'Chapters', position: 'left'},
         {to: '/dashboard', label: 'Dashboard', position: 'left'},
         {
-          type: 'custom-translateButton',
-          position: 'right',
-        },
-        {
-          type: 'custom-personalizeButton',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/your-username/physical-ai-textbook',
+          href: 'https://github.com/maaz705/physical-ai-textbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -139,7 +131,7 @@ const config: Config = {
             },
             {
               label: 'Community Forum',
-              href: 'https://github.com/your-username/physical-ai-textbook/discussions',
+              href: 'https://github.com/maaz705/physical-ai-textbook/discussions',
             },
           ],
         },
@@ -148,11 +140,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/physical-ai-textbook',
+              href: 'https://github.com/maaz705/physical-ai-textbook',
             },
             {
               label: 'Report Issues',
-              href: 'https://github.com/your-username/physical-ai-textbook/issues',
+              href: 'https://github.com/maaz705/physical-ai-textbook/issues',
             },
           ],
         },
