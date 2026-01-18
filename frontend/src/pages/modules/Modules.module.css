@@ -1,0 +1,109 @@
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.modulesGrid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.moduleCard {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.moduleCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.moduleTitle {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+.weekLabel {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.moduleDescription {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.moduleStats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.moduleActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewButton {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.viewButton:hover {
+  background-color: #1976d2;
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .modulesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .modulesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

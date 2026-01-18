@@ -1,0 +1,262 @@
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.tabButton {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #7f8c8d;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.tabButton:hover {
+  color: #2c3e50;
+}
+
+.tabButton.active {
+  color: #2196f3;
+  border-bottom-color: #2196f3;
+}
+
+.tabContent {
+  min-height: 400px;
+}
+
+/* Overview Tab */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statCard h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: #2196f3;
+}
+
+.statCard p {
+  margin: 0.5rem 0 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.quickActions h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.actionButton:hover {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Profile Tab */
+.profileSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.profileSection h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+.infoRow span:first-child {
+  font-weight: 500;
+  color: #555;
+}
+
+.infoRow span:last-child {
+  color: #7f8c8d;
+}
+
+/* Hardware Tab */
+.hardwareOverview {
+  margin-bottom: 2rem;
+}
+
+.hardwareSection {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hardwareSection h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.hardwareForm {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Progress Tab */
+.progressOverview {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #2196f3;
+  transition: width 0.3s ease;
+}
+
+.moduleProgress h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.moduleItem {
+  margin-bottom: 1.5rem;
+}
+
+.moduleInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.moduleInfo h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.moduleStatus {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.moduleStatus.completed {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.moduleStatus.inProgress {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.moduleBar {
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.moduleFill {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+  .actionButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+  }
+
+  .moduleInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

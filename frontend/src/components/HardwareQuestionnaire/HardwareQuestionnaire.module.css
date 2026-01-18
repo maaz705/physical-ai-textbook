@@ -1,0 +1,209 @@
+.questionnaireContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.questionnaireHeader {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.questionnaireHeader h2 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.questionnaireHeader p {
+  margin: 0 0 1rem 0;
+  color: #7f8c8d;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.progressStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.progressStep:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.stepIndicator {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #b0bec5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.stepIndicator.active {
+  background-color: #2196f3;
+  transform: scale(1.1);
+}
+
+.progressStep span {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.questionnaireForm {
+  padding: 1.5rem;
+}
+
+.stepContent h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.helpText {
+  display: block;
+  margin-top: 0.25rem;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.reviewSection {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.reviewSection h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.reviewItem {
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.navButton,
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.navButton {
+  background-color: #f5f5f5;
+  color: #555;
+}
+
+.navButton:hover {
+  background-color: #e0e0e0;
+}
+
+.submitButton {
+  background-color: #2196f3;
+  color: white;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.submitButton:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .questionnaireContainer {
+    margin: 1rem;
+  }
+
+  .progressBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .progressStep:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .navigationButtons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navButton,
+  .submitButton {
+    width: 100%;
+  }
+}

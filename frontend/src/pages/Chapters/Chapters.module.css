@@ -1,0 +1,218 @@
+.chapterLayout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  min-height: 600px;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.chapterNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.navItem:hover {
+  border-color: #2196f3;
+  background-color: #f5f9ff;
+}
+
+.navItem.active {
+  border-color: #2196f3;
+  background-color: #e3f2fd;
+}
+
+.chapterOrder {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.chapterTitle {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.chapterDuration {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+.moduleInfo {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.moduleInfo h4 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.moduleInfo p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.mainContent {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0;
+  min-height: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chapterHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chapterHeader h1 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.chapterActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chatbotToggle, .personalizeBtn, .translateBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #2196f3;
+  background-color: white;
+  color: #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.chatbotToggle:hover, .personalizeBtn:hover, .translateBtn:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+.contentAndChat {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 1rem;
+  min-height: 500px;
+}
+
+.chapterContent {
+  padding: 0;
+}
+
+.chatbotSidebar {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 1rem;
+}
+
+.noChapter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .contentAndChat {
+    grid-template-columns: 1fr;
+  }
+
+  .chatbotSidebar {
+    border-left: none;
+    border-top: 1px solid #e0e0e0;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chapterLayout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+  .mainContent {
+    order: 1;
+  }
+
+  .chapterHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .chapterActions {
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+
+  .navItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chapterOrder, .chapterDuration {
+    flex-shrink: 0;
+  }
+
+  .chapterTitle {
+    flex: 1;
+    margin: 0 0.5rem;
+    text-align: center;
+  }
+}
