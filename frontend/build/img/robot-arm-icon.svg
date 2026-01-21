@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Shoulder joint -->
+  <circle cx="20" cy="50" r="12" fill="#1a1a1a" stroke="#00a8ff" stroke-width="2"/>
+  <!-- Upper arm -->
+  <rect x="32" y="45" width="25" height="10" rx="5" fill="#1a1a1a" stroke="#00a8ff" stroke-width="2"/>
+  <!-- Elbow joint -->
+  <circle cx="57" cy="50" r="8" fill="#1a1a1a" stroke="#00a8ff" stroke-width="2"/>
+  <!-- Forearm -->
+  <rect x="65" y="45" width="20" height="10" rx="5" fill="#1a1a1a" stroke="#00a8ff" stroke-width="2"/>
+  <!-- Wrist joint -->
+  <circle cx="85" cy="50" r="6" fill="#1a1a1a" stroke="#00a8ff" stroke-width="2"/>
+  <!-- Gripper/end effector -->
+  <path d="M85,44 L92,40 L95,44 L95,56 L92,60 L85,56 Z" fill="#1a1a1a" stroke="#00a8ff" stroke-width="2"/>
+  <!-- Grip fingers -->
+  <line x1="92" y1="44" x2="97" y2="42" stroke="#00a8ff" stroke-width="1"/>
+  <line x1="92" y1="56" x2="97" y2="58" stroke="#00a8ff" stroke-width="1"/>
+  <!-- Internal wiring -->
+  <path d="M20,50 Q30,40 40,45 Q50,40 60,45 Q70,40 80,45" fill="none" stroke="#00a8ff" stroke-width="0.5" opacity="0.5"/>
+  <!-- Status lights -->
+  <circle cx="35" cy="40" r="2" fill="#00ff00" opacity="0.7"/>
+  <circle cx="70" cy="40" r="2" fill="#00ff00" opacity="0.7"/>
+</svg>

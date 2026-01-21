@@ -96,6 +96,14 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          type: 'custom-TranslateButton',
+          position: 'right',
+        },
+        {
+          type: 'custom-PersonalizeButton',
+          position: 'right',
+        },
       ],
     },
     footer: {

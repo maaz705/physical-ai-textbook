@@ -13,26 +13,57 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <div className="row">
-          <div className="col col--6 col--offset-3">
-            <div className="text--center padding-horiz--md">
-              <Heading as="h1" className="hero__title" style={{color: '#ffffff', fontSize: '3rem', fontWeight: 'bold'}}>
-                Physical AI & Humanoid Robotics
+        <div className={clsx('row', styles.splitScreen)}>
+          {/* Left side - Text content */}
+          <div className="col col--6" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '500px'}}>
+            <div className={styles.textContent}>
+              <Heading as="h1" className={clsx('hero__title', styles.mainTitle)}>
+                PHYSICAL AI & HUMANOID ROBOTICS
               </Heading>
-              <p className="hero__subtitle" style={{color: '#b0b0b0', fontSize: '1.5rem', marginTop: '1rem'}}>
-                Master Next-Generation Robotics with AI-Powered Assistance
+              <p className={clsx('hero__subtitle', styles.subtitle)}>
+                The 13-Week Blueprint
               </p>
-              <div className={styles.buttons} style={{marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem'}}>
+
+              {/* Contextual icons */}
+              <div className={styles.contextualIcons}>
+                <span className={styles.monoLabel}>// Open Source</span>
+                <span className={styles.monoLabel}>// Academic Standard</span>
+              </div>
+
+              <div className={styles.buttonGroup}>
                 <Link
-                  className="button button--primary button--lg"
+                  className={clsx('button', styles.primaryButton)}
                   to="/docs/curriculum">
-                  Start Learning - 13 Weeks 🚀
+                  START LEARNING →
                 </Link>
                 <Link
-                  className="button button--secondary button--lg"
-                  to="/modules">
-                  Explore Modules
+                  className={clsx('button', styles.ghostButton)}
+                  to="/docs/curriculum">
+                  View Curriculum
                 </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side - 3D book cover */}
+          <div className="col col--6" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <div className={styles.bookCoverContainer}>
+              <div className={styles.bookCover}>
+                <div className={styles.bookSpine}></div>
+                <div className={styles.bookFace}>
+                  <div className={styles.robotSchematic}>
+                    <img
+                      src="/img/robot-hero-schematic.svg"
+                      alt="Humanoid Robot Schematic"
+                      className={styles.robotImage}
+                    />
+                  </div>
+                  <div className={styles.bookTitle}>
+                    <h3>PHYSICAL AI & HUMANOID ROBOTICS</h3>
+                    <p>13-Week Blueprint</p>
+                  </div>
+                </div>
+                <div className={styles.bookEdge}></div>
               </div>
             </div>
           </div>

@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'ROS 2 Framework',
-    Svg: require('@site/static/img/ros2-icon.svg').default,
+    title: 'Actuator Control',
+    Svg: require('@site/static/img/robot-actuator-icon.svg').default,
     description: (
       <>
-        Master Robot Operating System 2 - the standard framework for robotics development
-        with distributed computing, hardware abstraction, and device drivers.
+        Master precision control systems and actuator mechanisms for humanoid robotics
+        with distributed computing, hardware abstraction, and real-time feedback.
       </>
     ),
   },
   {
-    title: 'Digital Twins',
-    Svg: require('@site/static/img/digital-twin-icon.svg').default,
+    title: 'AI Brain Integration',
+    Svg: require('@site/static/img/robot-ai-icon.svg').default,
     description: (
       <>
-        Create realistic simulations with NVIDIA Isaac Sim and Gazebo for testing
-        robot behaviors in virtual environments before deploying to physical hardware.
+        Develop intelligent decision-making systems with neural networks and cognitive
+        architectures for autonomous robot behavior and adaptive learning.
       </>
     ),
   },
   {
-    title: 'Isaac Lab & VLA Models',
-    Svg: require('@site/static/img/isaac-vla-icon.svg').default,
+    title: 'Manipulation & Control',
+    Svg: require('@site/static/img/robot-arm-icon.svg').default,
     description: (
       <>
-        Leverage advanced AI models for vision-language-action integration,
-        enabling robots to perceive, reason, and act in complex real-world scenarios.
+        Implement advanced manipulation algorithms and control systems for precise
+        physical interaction with complex real-world environments and objects.
       </>
     ),
   },

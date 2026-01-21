@@ -1,11 +1,37 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
+  background: radial-gradient(circle at center, rgba(0, 168, 255, 0.05) 0%, transparent 70%);
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+  filter: drop-shadow(0 0 15px rgba(0, 168, 255, 0.3));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.featureSvg:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 0 20px rgba(0, 168, 255, 0.5));
+}
+
+/* Enhanced card styling for features */
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* Robotic-themed hover effects for feature cards */
+.col:hover .featureSvg {
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { filter: drop-shadow(0 0 15px rgba(0, 168, 255, 0.3)); }
+  50% { filter: drop-shadow(0 0 25px rgba(0, 168, 255, 0.6)); }
 }
